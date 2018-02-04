@@ -190,6 +190,15 @@
                 <?php endforeach; ?>
                 </tbody>
             </table>
+
+            <?php if($pageMax==0) : ?>
+                <hr>
+                <h3 class="text-center">
+                    Désolé, aucun résultat
+                </h3>
+                <hr>
+
+            <?php endif; ?>
         </div>
     </div>
 </div>

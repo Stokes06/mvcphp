@@ -26,6 +26,7 @@ class ProduitController extends AbstractController
      */
     public function __construct()
     {
+        parent::__construct();
         $this->produitService = FactoryService::getService(PRODUCT);
         $this->typeService = FactoryService::getService(TYPE);
         $this->userService = FactoryService::getService(USER);
@@ -81,8 +82,8 @@ class ProduitController extends AbstractController
         $produits = $pageable->getContent();
         $numberOfProducts = $pageable->getNumberTotalOfRows();
 
-        $pageMax = (int)floor($numberOfProducts / ProduitRepository::NUMBER_PER_PAGE)
-            + ($numberOfProducts % ProduitRepository::NUMBER_PER_PAGE == 0 ? 0 : 1);
+        $pageMax = (int)floor($numberOfProducts / ProduitRepository::$NUMBER_PER_PAGE)
+            + ($numberOfProducts % ProduitRepository::$NUMBER_PER_PAGE == 0 ? 0 : 1);
 
         $this->render("index", compact("produits", "types", "TITLE_PAGE",
             "type", "last", "pageMax", "page", "numberOfProducts",
@@ -92,10 +93,13 @@ class ProduitController extends AbstractController
     public function create($produit = null, $errors = [])
     {
         $TITLE_PAGE = $produit == null ? "Ajouter un produit" : "Modifier un produit";
+        $mois = [
+            "janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"
+        ];
         $types = $this->typeService->getAll();
         $action = $produit == null ? "create" : "update";
         $this->setUrl("/product/" . $action);
-        $this->render("create", compact("TITLE_PAGE", "produit", "types", "errors"));
+        $this->render("create", compact("TITLE_PAGE", "produit", "types","mois", "errors"));
     }
 
     public function update()

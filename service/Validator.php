@@ -45,7 +45,7 @@ class Validator{
         if( $stock < 0)
             $this->errors['stock'] = "Le stock doit être positif.";
         if(empty($mois) || $mois < 1 || $mois > 12)
-            $this->errors['mois'] = "Le mois doit être compris entre 1 et 12";
+            $this->errors['mois'] = "Veuillez sélectionner un mois.";
         if(empty($type) || $type <=0)
             $this->errors['type'] = "Il faut choisir un type.";
     }

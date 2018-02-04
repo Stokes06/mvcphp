@@ -13,24 +13,14 @@ use Business\TypeProduit;
 use Data\DataConnect;
 use PDO;
 
-class TypeProduitRepository implements AbstractRepository
+class TypeProduitRepository extends AppRepository
 {
-    protected $pdo;
-    protected $config;
+
     public function __construct()
     {
-        $this->pdo = DataConnect::getConnection();
+        parent::__construct();
     }
 
-    /**
-     * @param mixed $config
-     * @return TypeProduitRepository
-     */
-    public function setConfig($config)
-    {
-        $this->config = $config;
-        return $this;
-    }
 
 
     public function delete($id)

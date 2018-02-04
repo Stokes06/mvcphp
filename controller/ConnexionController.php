@@ -10,6 +10,7 @@ class ConnexionController extends AbstractController{
 
     public function __construct()
     {
+        parent::__construct();
         $this->userService = $this->getUserService();
     }
 

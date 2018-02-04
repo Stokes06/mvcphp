@@ -3,26 +3,21 @@
 namespace Repository;
 
 use Business\Produit;
-use Business\TypeProduit;
 use Data\DataConnect;
-use Dev\Tool;
 use PDO;
-use Service\TypeProduitServiceI;
+use Service\Configuration;
 
-class ProduitRepository implements AbstractRepository
+class ProduitRepository extends AppRepository
 {
-    const NUMBER_PER_PAGE = 6;
-    protected $config;
-    protected $pdo;
     /** @var TypeProduitRepository */
     protected $typeRepository;
-
     /**
      * ProduitRepository constructor.
      */
     public function __construct()
     {
-        $this->pdo = DataConnect::getConnection();
+        parent::__construct();
+        self::$NUMBER_PER_PAGE = Configuration::getConfig()->getNumberperpage();
         $this->typeRepository = FactoryRepository::getRepository(TYPE);
     }
 
@@ -39,7 +34,7 @@ class ProduitRepository implements AbstractRepository
     /**
      * @param $idType
      * @param int $page
-     * @return array
+     * @return Page
      */
     public function getAllByTypeId($idType, $page = 1)
     {
@@ -135,7 +130,7 @@ class ProduitRepository implements AbstractRepository
 
     /**
      * @param int $page
-     * @return array
+     * @return Page
      */
     public function getAll($page = 1)
     {
@@ -157,48 +152,7 @@ class ProduitRepository implements AbstractRepository
     public function getPage($page, $query="",  $params = [], $sort=null)
     {
         $query = "select id from produit ".$query;
-       // Tool::debug($params);
-        $req = $this->pdo->prepare($query);
-       // Tool::debug($req);
-        foreach ($params as $key=> &$param) {
-            $req->bindParam($key, $param);
-        }
-        $req->execute();
-        $count = $req->rowCount();
-        if($count==0) {
-            return new Page([], 0);
-        }
-
-        $order = null;
-        $direction = null;
-        if($sort){
-            $a = explode(",", $sort);
-            $order = $a[0];
-            $direction = isset($a[1]) ? 'DESC': 'ASC';
-            $query .= " order by $order ".$direction;
-        }
-
-        $pageMax = (int)floor($count / self::NUMBER_PER_PAGE) + ($count % self::NUMBER_PER_PAGE == 0 ? 0 : 1);
-        $page = $page > $pageMax ? $pageMax : ($page > 0 ? $page : 1);
-        $offset = ($page - 1) * self::NUMBER_PER_PAGE;
-        $statement = $query . " limit :offset, :limit";
-
-
-        $req = $this->pdo->prepare($statement);
-
-        foreach ($params as $key => &$param) {
-            $req->bindParam($key, $param);
-        }
-        $req->bindValue("offset", (int)$offset, PDO::PARAM_INT);
-        $req->bindValue("limit", (int)self::NUMBER_PER_PAGE, PDO::PARAM_INT);
-
-        $req->execute();
-        $res = $req->fetchAll(PDO::FETCH_OBJ);
-        $produits = [];
-        foreach ($res as $row) {
-            $produits[] = $this->getById($row->id);
-        }
-        return new Page($produits, $count);
+        return parent::getPage($page, $query, $params, $sort);
     }
 
     /**
@@ -227,7 +181,7 @@ class ProduitRepository implements AbstractRepository
     public function count()
     {
         $statement = "select count(*) nb from produit";
-        $req = $this->pdo->query($statement);
-        return $req->fetch(PDO::FETCH_OBJ)->nb;
+        return $this->pdo->query($statement)->fetchColumn();
+
     }
 }

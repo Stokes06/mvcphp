@@ -9,6 +9,15 @@ abstract class AbstractController{
     //$url sera envoyé à mes pages pour faire les traitement, comme par exemple savoir quel onglet activer
     /** @var  string $url */
     protected $url;
+    protected $viewPath = __DIR__."/../views/";
+    protected $menuView;
+    protected $template;
+
+    public function __construct()
+    {
+        $this->menuView = $this->viewPath."menu.php";
+        $this->template = Configuration::getConfig()->getLayout();
+    }
 
     protected function getProduitService(){
         return FactoryService::getService(PRODUCT);
@@ -35,7 +44,7 @@ abstract class AbstractController{
      * @param array $variables
      */
     public function render($viewName, $variables=[]){
-        $view = Configuration::getConfig()->getLayout();
+
         //variables communes à toutes les pages
         $url = $this->getUrl();
         $user = $this->getUser();
@@ -44,16 +53,16 @@ abstract class AbstractController{
 
         //Charger le menu
         ob_start();
-        require __DIR__."/../views/menu.php";
-        $MENU = ob_get_contents();
-        ob_clean();
+        require $this->menuView;
+        $MENU = ob_get_clean();
 
         //Charger le body
         ob_start();
-        require __DIR__."/../views/".$viewName.".php";
-        $BODY = ob_get_contents();
-        ob_clean();
-        include $view;
+        require $this->viewPath.$viewName.".php";
+        $BODY = ob_get_clean();
+
+        //Charger le template
+        require $this->template;
     }
     protected function getUser(){
         return $this->getUserService()->getUser();

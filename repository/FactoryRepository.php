@@ -9,7 +9,7 @@ class FactoryRepository{
      * type for TypeRepository
      * user for UserRepository
      * @param $name
-     * @return null|ProduitRepository|TypeProduitRepository|UserRepository
+     * @return RepositoryInterface
      */
     public static function getRepository($name){
 

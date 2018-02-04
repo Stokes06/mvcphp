@@ -1,6 +1,6 @@
 <?php
 namespace Repository;
-interface AbstractRepository{
+interface RepositoryInterface{
     public function delete($id);
     public function create($object);
     public function update($object);

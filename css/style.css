@@ -70,13 +70,13 @@ h1{
 }
 @keyframes erreurClignotante {
     0% {}
-    50% {color:black;}
+    50% {color:white; background-color: black}
 }
 
 .form-error{
     padding-left: 15px;
     color : red;
-    animation: erreurClignotante .5s 4;
+    animation: erreurClignotante .3s 6;
 }
 #look-product{
     margin-top : 50px;
@@ -95,4 +95,9 @@ h1{
 }
 .dropdown-toggle:hover{
     cursor: hand!important;
+}
+
+.navbar li{
+    min-width: 100px;
+    text-align: center;
 }

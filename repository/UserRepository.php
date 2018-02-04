@@ -4,27 +4,16 @@ use Business\User;
 use Data\DataConnect;
 use PDO;
 
-class UserRepository{
+class UserRepository extends AppRepository {
 
-    protected $pdo;
-    protected $config;
     /**
      * UserRepository constructor.
      */
     public function __construct()
     {
-        $this->pdo = DataConnect::getConnection();
+        parent::__construct();
     }
 
-    /**
-     * @param mixed $config
-     * @return UserRepository
-     */
-    public function setConfig($config)
-    {
-        $this->config = $config;
-        return $this;
-    }
 
     /**
      * @param $login
@@ -41,4 +30,33 @@ class UserRepository{
         return null;
     }
 
+    public function delete($id)
+    {
+        // TODO: Implement delete() method.
+    }
+
+    public function create($object)
+    {
+        // TODO: Implement create() method.
+    }
+
+    public function update($object)
+    {
+        // TODO: Implement update() method.
+    }
+
+    public function getById($id)
+    {
+        // TODO: Implement getById() method.
+    }
+
+    public function getAll()
+    {
+        // TODO: Implement getAll() method.
+    }
+
+    public function count()
+    {
+        // TODO: Implement count() method.
+    }
 }

@@ -33,7 +33,12 @@
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="mois">Mois:</label>
                     <div class="col-sm-9">
-                        <input type="number" value="<?= isset($produit) ? $produit->getNumeroMois() :null ?>" min="1" max="12" name="mois" class="form-control" id="mois" >
+                        <select name="mois">
+                            <option value="0">Selectionnez le mois</option>
+                            <?php for($i=0; $i<count($mois); ++$i): ?>
+                                <option value="<?=$i+1?>"><?=$mois[$i]?></option>
+                            <?php endfor; ?>
+                        </select>
                     </div>
                     <div class="form-error col-sm-offset-3"><?= $errors['mois'] ?? null?></div>
                 </div>

@@ -1,0 +1,98 @@
+:root {
+    --link-padding: 35px;
+}
+.navbar{
+    border-radius: 0;
+    padding: 0 100px;
+    margin-bottom: 0;
+}
+.navbar-header a{
+    padding-top: var(--link-padding);
+    padding-bottom: var(--link-padding);
+}
+.navbar  .navbar-nav > li > a {
+    padding-top: var(--link-padding);
+    padding-bottom: var(--link-padding);
+}
+thead{
+    font-size: 1.5em;
+}
+.list-btn-trie{
+    list-style: none;
+    padding: 0;
+}
+.list-btn-trie li{
+    display: inline;
+    margin-right: 10px;
+}
+.list-btn-trie a{
+    font-size: 1.5em;
+}
+.list-btn-trie a:hover{
+    text-decoration: none;
+}
+h1{
+    margin-bottom: 40px;
+}
+#form-login > div{
+
+    margin-bottom: 5px;
+}
+
+#filtres{
+    padding: 20px;
+    border : 2px dotted black;
+}
+
+#btn-filtres{
+    margin-bottom: 20px;
+}
+
+.lastUpdatedRow{
+
+    color : white;
+}
+.lastUpdatedRow a{
+    color: white;
+    animation: allblink .5s 6;
+}
+.lastUpdatedRow {
+    background-color: #0a1944;
+    color : white;
+    animation: allblink .5s 6;
+
+}
+
+
+@keyframes allblink {
+    0% { }
+    50% { color:green; background-color:black; }
+}
+@keyframes erreurClignotante {
+    0% {}
+    50% {color:black;}
+}
+
+.form-error{
+    padding-left: 15px;
+    color : red;
+    animation: erreurClignotante .5s 4;
+}
+#look-product{
+    margin-top : 50px;
+    font-size: 1.3em;
+}
+.vendeur{
+    color: green;
+}
+.acheteur{
+    color : blue;
+}
+#display-error404{
+    height: 90%;
+    background-size: cover;
+    background: url("/img/error404.jpg") center no-repeat;
+}
+.dropdown-toggle:hover{
+    cursor: hand!important;
+}

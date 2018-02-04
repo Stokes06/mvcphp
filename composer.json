@@ -1,0 +1,20 @@
+{
+    "name": "guillaume/mvc",
+    "authors": [
+        {
+            "name": "Guillaume Mathieu",
+            "email": "mathieu.guillaume93@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Service\\": "service/",
+            "Repository\\": "repository/",
+            "Business\\": "classes/",
+            "Controller\\": "controller/",
+            "Data\\": "data/",
+            "Dev\\": "utils/"
+        }
+    },
+    "require": {}
+}

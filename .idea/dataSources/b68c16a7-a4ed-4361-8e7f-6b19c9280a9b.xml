@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="epicerie@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="epicerie">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="animaux"/>
+    <schema id="4" parent="1" name="autoroute"/>
+    <schema id="5" parent="1" name="avis"/>
+    <schema id="6" parent="1" name="cadeaux"/>
+    <schema id="7" parent="1" name="calendar"/>
+    <schema id="8" parent="1" name="cave"/>
+    <schema id="9" parent="1" name="collect_manager"/>
+    <schema id="10" parent="1" name="cours_jdbc"/>
+    <schema id="11" parent="1" name="db_cinema"/>
+    <schema id="12" parent="1" name="db_command"/>
+    <schema id="13" parent="1" name="db_connexion"/>
+    <schema id="14" parent="1" name="db_couleurs"/>
+    <schema id="15" parent="1" name="db_debug"/>
+    <schema id="16" parent="1" name="db_encheres"/>
+    <schema id="17" parent="1" name="db_films"/>
+    <schema id="18" parent="1" name="db_fleurs"/>
+    <schema id="19" parent="1" name="db_ideanoval"/>
+    <schema id="20" parent="1" name="db_location"/>
+    <schema id="21" parent="1" name="db_stagiaires"/>
+    <schema id="22" parent="1" name="db_trainee"/>
+    <schema id="23" parent="1" name="devops"/>
+    <schema id="24" parent="1" name="disney"/>
+    <schema id="25" parent="1" name="enqueteshibernate"/>
+    <schema id="26" parent="1" name="examen_blanc_cook"/>
+    <schema id="27" parent="1" name="examjunitg10"/>
+    <schema id="28" parent="1" name="fenetrier"/>
+    <schema id="29" parent="1" name="fruits"/>
+    <schema id="30" parent="1" name="gameofthrones"/>
+    <schema id="31" parent="1" name="garage"/>
+    <schema id="32" parent="1" name="gestion_clients"/>
+    <schema id="33" parent="1" name="information_schema"/>
+    <schema id="34" parent="1" name="mediatheque"/>
+    <schema id="35" parent="1" name="mysql"/>
+    <schema id="36" parent="1" name="performance_schema"/>
+    <schema id="37" parent="1" name="prets"/>
+    <schema id="38" parent="1" name="produits"/>
+    <schema id="39" parent="1" name="specificationsdrafting"/>
+    <schema id="40" parent="1" name="sys"/>
+    <schema id="41" parent="1" name="test_hibernate"/>
+    <schema id="42" parent="1" name="vais"/>
+    <table id="43" parent="2" name="produit"/>
+    <table id="44" parent="2" name="typeproduit"/>
+    <table id="45" parent="2" name="user"/>
+    <column id="46" parent="43" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="43" name="nom">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="48" parent="43" name="prix">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="49" parent="43" name="mois">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="50" parent="43" name="stock">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="43" name="image">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="52" parent="43" name="idType">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="53" parent="43" name="idType">
+      <ColNames>idType</ColNames>
+    </index>
+    <key id="54" parent="43" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="55" parent="44" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="56" parent="44" name="nom">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="57" parent="44" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="45" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="45" name="login">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="45" name="password">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="45" name="isAdmin">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <index id="62" parent="45" name="login">
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="45" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="64" parent="45" name="login">
+      <ColNames>login</ColNames>
+      <UnderlyingIndexName>login</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

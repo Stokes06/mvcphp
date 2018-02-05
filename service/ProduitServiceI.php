@@ -132,13 +132,14 @@ class ProduitServiceI implements ProduitService{
 
     /**
      * @param $page
+     * @param $photo
      * @param $type
      * @param $nom
      * @param $sort
      * @return \Repository\Page
      */
-    public function applyFiltersAndSorting($page, $type, $nom, $sort){
-        return $this->produitRepo->applyFiltersAndSorting($page, $type, $nom, $sort);
+    public function applyFiltersAndSorting($page, $photo, $type, $nom, $sort){
+        return $this->produitRepo->applyFiltersAndSorting($page, $photo, $type, $nom, $sort);
     }
     public function getProduitsBySort($page, $sort)
     {

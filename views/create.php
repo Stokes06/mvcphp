@@ -2,11 +2,13 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
+            <div class="page-header">
            <?php if(isset($produit)) : ?>
                <h1 class="text-center">Modifier un produit</h1>
             <?php else : ?>
             <h1 class="text-center">Ajouter un produit</h1>
             <?php endif; ?>
+            </div>
             <form id="form" enctype="multipart/form-data" action="/product/submit" method="post" class="form-horizontal">
                 <input type="hidden" name="id" value="<?= isset($produit)? $produit->getId() : null?>">
                 <div class="form-group">
@@ -33,10 +35,10 @@
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="mois">Mois:</label>
                     <div class="col-sm-9">
-                        <select name="mois">
+                        <select class="form-control" name="mois">
                             <option value="0">Selectionnez le mois</option>
                             <?php for($i=0; $i<count($mois); ++$i): ?>
-                                <option value="<?=$i+1?>"><?=$mois[$i]?></option>
+                                <option <?= (isset($produit) && $i==($produit->getNumeroMois())? 'selected' : null)?> value="<?=$i+1?>"><?=$mois[$i]?></option>
                             <?php endfor; ?>
                         </select>
                     </div>

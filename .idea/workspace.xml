@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9424de6a-9448-400c-8ef2-b0fa78794b2d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/repository/AbstractRepository.php" afterPath="$PROJECT_DIR$/repository/RepositoryInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.ini" afterPath="$PROJECT_DIR$/config/config.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/AbstractController.php" afterPath="$PROJECT_DIR$/controller/AbstractController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ConnexionController.php" afterPath="$PROJECT_DIR$/controller/ConnexionController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ProduitController.php" afterPath="$PROJECT_DIR$/controller/ProduitController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/FactoryRepository.php" afterPath="$PROJECT_DIR$/repository/FactoryRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/ProduitRepository.php" afterPath="$PROJECT_DIR$/repository/ProduitRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/TypeProduitRepository.php" afterPath="$PROJECT_DIR$/repository/TypeProduitRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/UserRepository.php" afterPath="$PROJECT_DIR$/repository/UserRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/Validator.php" afterPath="$PROJECT_DIR$/service/Validator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/ProduitServiceI.php" afterPath="$PROJECT_DIR$/service/ProduitServiceI.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/create.php" afterPath="$PROJECT_DIR$/views/create.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.php" afterPath="$PROJECT_DIR$/views/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.php" afterPath="$PROJECT_DIR$/views/layout.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,40 +50,87 @@
       <file leaf-file-name="ProduitRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/repository/ProduitRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="154" column="62" lean-forward="false" selection-start-line="154" selection-start-column="62" selection-end-line="154" selection-end-column="62" />
+            <state relative-caret-position="295">
+              <caret line="163" column="19" lean-forward="false" selection-start-line="163" selection-start-column="19" selection-end-line="163" selection-end-column="19" />
               <folding>
                 <element signature="e#30#51#0#PHP" expanded="true" />
-                <marker date="1517779201481" expanded="true" signature="878:892" ph="select id fr... produit" />
-                <marker date="1517779201481" expanded="true" signature="1348:1378" ph="delete from " />
-                <marker date="1517779201481" expanded="true" signature="1640:1718" ph="insert into produit... " />
-                <marker date="1517779201481" expanded="true" signature="2239:2364" ph="update produ... " />
-                <marker date="1517779201481" expanded="true" signature="2873:2986" ph="select nom, produit" />
-                <marker date="1517779201481" expanded="true" signature="3520:3522" ph="select id fr... produit" />
-                <marker date="1517779201481" expanded="true" signature="3638:3646" ph="select * fro... produit" />
-                <marker date="1517779201481" expanded="true" signature="3638:3647" ph="select * fro... produit" />
-                <marker date="1517779201481" expanded="true" signature="3949:3972" ph="select id fr... produit" />
-                <marker date="1517779201481" expanded="true" signature="4792:4823" ph="select count... produit" />
+                <marker date="1517803061233" expanded="true" signature="878:892" ph="select id fr... produit" />
+                <marker date="1517803061233" expanded="true" signature="1348:1378" ph="delete from " />
+                <marker date="1517803061233" expanded="true" signature="1640:1718" ph="insert into produit... " />
+                <marker date="1517803061233" expanded="true" signature="2239:2364" ph="update produ... " />
+                <marker date="1517803061233" expanded="true" signature="2873:2986" ph="select nom, produit" />
+                <marker date="1517803061233" expanded="true" signature="3520:3522" ph="select id fr... produit" />
+                <marker date="1517803061233" expanded="true" signature="3638:3646" ph="select * fro... produit" />
+                <marker date="1517803061233" expanded="true" signature="3638:3647" ph="select * fro... produit" />
+                <marker date="1517803061233" expanded="true" signature="3949:3972" ph="select id fr... produit" />
+                <marker date="1517803061233" expanded="true" signature="5028:5059" ph="select count... produit" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FactoryRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/FactoryRepository.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="517">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding>
+                <element signature="e#6#51#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#13956#14153#0#PHP" expanded="false" />
+                <marker date="1517805704162" expanded="true" signature="5135:5182" ph="..." />
+                <marker date="1517805704162" expanded="true" signature="5538:5590" ph="..." />
+                <marker date="1517805704162" expanded="true" signature="5559:5590" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" column="92" lean-forward="false" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.php">
+      <file leaf-file-name="ProduitController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/ProduitController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="198" column="20" lean-forward="false" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="20" />
+            <state relative-caret-position="337">
+              <caret line="90" column="32" lean-forward="false" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProduitServiceI.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/ProduitServiceI.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="138" column="31" lean-forward="false" selection-start-line="138" selection-start-column="31" selection-end-line="138" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/menu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="glyphicon.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/glyphicon.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -99,76 +139,30 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+            <state relative-caret-position="392">
+              <caret line="118" column="22" lean-forward="false" selection-start-line="118" selection-start-column="22" selection-end-line="118" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/UserRepository.php">
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="290">
+              <caret line="40" column="115" lean-forward="false" selection-start-line="40" selection-start-column="115" selection-end-line="40" selection-end-column="115" />
               <folding>
-                <marker date="1517778926035" expanded="true" signature="411:485" ph="select id, l... user" />
+                <marker date="1517801290930" expanded="true" signature="4479:4486" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepositoryInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/RepositoryInterface.php">
+      <file leaf-file-name="Produit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Produit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeProduitRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/TypeProduitRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding>
-                <marker date="1517778927040" expanded="true" signature="713:755" ph="select id, n... typeproduit" />
-                <marker date="1517778927040" expanded="true" signature="1097:1123" ph="select id fr... typeproduit" />
-                <marker date="1517778927040" expanded="true" signature="1368:1403" ph="select count... typeproduit" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppRepository.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/repository/AppRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-              <folding>
-                <element signature="e#29#50#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoload_psr4.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProduitService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/ProduitService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="2242">
+              <caret line="201" column="10" lean-forward="false" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -178,10 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>download</find>
-      <find>delete</find>
-      <find>debu</find>
-      <find>initdata</find>
       <find>type</find>
       <find>defau</find>
       <find>ob</find>
@@ -197,10 +187,21 @@
       <find>getAll</find>
       <find>echo</find>
       <find>saison</find>
-      <find>mois</find>
       <find>form-err</find>
       <find>NUMBER</find>
       <find>pagina</find>
+      <find>croissant</find>
+      <find>pag</find>
+      <find>text-center</find>
+      <find>?&gt;</find>
+      <find>mois</find>
+      <find>use</find>
+      <find>fil</find>
+      <find>user</find>
+      <find>href</find>
+      <find>colla</find>
+      <find>collapse</find>
+      <find>Mas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,29 +237,30 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/service/Router.php" />
         <option value="$PROJECT_DIR$/controller/FactoryController.php" />
-        <option value="$PROJECT_DIR$/views/layout.php" />
         <option value="$PROJECT_DIR$/service/ProduitService.php" />
         <option value="$PROJECT_DIR$/controller/demo/Myrfa.php" />
         <option value="$PROJECT_DIR$/controller/Myrfa.php" />
         <option value="$PROJECT_DIR$/utils/tool.php" />
         <option value="$PROJECT_DIR$/test/test.php" />
         <option value="$PROJECT_DIR$/repository/Page.php" />
-        <option value="$PROJECT_DIR$/service/ProduitServiceI.php" />
-        <option value="$PROJECT_DIR$/views/create.php" />
         <option value="$PROJECT_DIR$/service/Validator.php" />
         <option value="$PROJECT_DIR$/controller/AbstractController.php" />
         <option value="$PROJECT_DIR$/controller/ConnexionController.php" />
         <option value="$PROJECT_DIR$/repository/RepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/controller/ProduitController.php" />
         <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/repository/AbstractRepository.php" />
         <option value="$PROJECT_DIR$/repository/TypeProduitRepository.php" />
         <option value="$PROJECT_DIR$/repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/repository/FactoryRepository.php" />
-        <option value="$PROJECT_DIR$/repository/ProduitRepository.php" />
-        <option value="$PROJECT_DIR$/views/index.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/repository/AppRepository.php" />
+        <option value="$PROJECT_DIR$/css/glyphicon.css" />
+        <option value="$PROJECT_DIR$/views/create.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/repository/ProduitRepository.php" />
+        <option value="$PROJECT_DIR$/service/ProduitServiceI.php" />
+        <option value="$PROJECT_DIR$/controller/ProduitController.php" />
+        <option value="$PROJECT_DIR$/views/layout.php" />
+        <option value="$PROJECT_DIR$/views/index.php" />
       </list>
     </option>
   </component>
@@ -351,6 +353,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,6 +371,11 @@
               <item name="mvc" type="b2602c69:ProjectViewProjectNode" />
               <item name="mvc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mvc" type="b2602c69:ProjectViewProjectNode" />
@@ -393,15 +402,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="css&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/css/style.css&#10;cre&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/create.php&#10;t&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;inde&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/index.php&#10;te&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;p&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/ProduitController.php&#10;test&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;getProduit&#9;null&#9;null&#10;pro&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/produit.php&#10;user&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/classes/User.php&#10;menu&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/menu.php&#10;cs&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/css/style.css&#10;Produi&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/produit.php&#10;ab&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/AbstractController.php&#10;abs&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/AbstractController.php&#10;men&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/menu.php&#10;me&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/menu.php&#10;controller/&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller&#10;produ&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/ProduitController.php&#10;too&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/utils/tool.php&#10;tool&#9;null&#9;null&#10;er&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/error404.php&#10;confi&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Configuration.php&#10;Confi&#9;null&#9;null&#10;rou&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;produi&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/classes/Produit.php&#10;index&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/index.php&#10;router&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;produit&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/repository/ProduitRepository.php&#10;rout&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;route&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;views/inde&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/index.php&#10;tes&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;fora&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/include/forall.php" />
+    <property name="SearchEverywhereHistoryKey" value="inde&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/index.php&#10;create&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/create.php&#10;css&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/css/style.css&#10;cre&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/create.php&#10;t&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;te&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;p&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/ProduitController.php&#10;test&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;getProduit&#9;null&#9;null&#10;pro&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/produit.php&#10;user&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/classes/User.php&#10;menu&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/menu.php&#10;cs&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/css/style.css&#10;Produi&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/produit.php&#10;ab&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/AbstractController.php&#10;abs&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/AbstractController.php&#10;men&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/menu.php&#10;me&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/menu.php&#10;controller/&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller&#10;produ&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/controller/ProduitController.php&#10;too&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/utils/tool.php&#10;tool&#9;null&#9;null&#10;er&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/error404.php&#10;confi&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Configuration.php&#10;Confi&#9;null&#9;null&#10;rou&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;produi&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/classes/Produit.php&#10;index&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/index.php&#10;router&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;produit&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/repository/ProduitRepository.php&#10;rout&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;route&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/service/Router.php&#10;views/inde&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/views/index.php&#10;tes&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/test/test.php&#10;fora&#9;FILE&#9;file://C:/Users/HB1/Desktop/PHP/mvc/include/forall.php" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
@@ -443,12 +450,13 @@
       <workItem from="1517595620927" duration="20449000" />
       <workItem from="1517667074652" duration="21996000" />
       <workItem from="1517693864527" duration="36334000" />
-      <workItem from="1517768416885" duration="7245000" />
+      <workItem from="1517768416885" duration="7824000" />
+      <workItem from="1517792689290" duration="13035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96903000" />
+    <option name="totallyTimeSpent" value="110517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,20 +471,20 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -516,26 +524,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b68c16a7-a4ed-4361-8e7f-6b19c9280a9b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/forall.php" />
     <entry file="file://$PROJECT_DIR$/service/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Produit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5829">
-          <caret line="201" column="10" lean-forward="false" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -578,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29">
@@ -655,14 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="35" column="98" lean-forward="false" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -728,29 +705,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/ProduitServiceI.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3857">
-          <caret line="137" column="31" lean-forward="false" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/Validator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="47" column="69" lean-forward="true" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
-          <folding>
-            <marker date="1517775136270" expanded="true" signature="4323:4330" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,22 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ProduitController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="84" column="57" lean-forward="true" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -813,14 +756,14 @@
     <entry file="file://$PROJECT_DIR$/repository/RepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/repository/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="145">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <marker date="1517778926035" expanded="true" signature="411:485" ph="select id, l... user" />
@@ -842,44 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/repository/FactoryRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/ProduitRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="154" column="62" lean-forward="false" selection-start-line="154" selection-start-column="62" selection-end-line="154" selection-end-column="62" />
-          <folding>
-            <element signature="e#30#51#0#PHP" expanded="true" />
-            <marker date="1517779201481" expanded="true" signature="878:892" ph="select id fr... produit" />
-            <marker date="1517779201481" expanded="true" signature="1348:1378" ph="delete from " />
-            <marker date="1517779201481" expanded="true" signature="1640:1718" ph="insert into produit... " />
-            <marker date="1517779201481" expanded="true" signature="2239:2364" ph="update produ... " />
-            <marker date="1517779201481" expanded="true" signature="2873:2986" ph="select nom, produit" />
-            <marker date="1517779201481" expanded="true" signature="3520:3522" ph="select id fr... produit" />
-            <marker date="1517779201481" expanded="true" signature="3638:3646" ph="select * fro... produit" />
-            <marker date="1517779201481" expanded="true" signature="3638:3647" ph="select * fro... produit" />
-            <marker date="1517779201481" expanded="true" signature="3949:3972" ph="select id fr... produit" />
-            <marker date="1517779201481" expanded="true" signature="4792:4823" ph="select count... produit" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="198" column="20" lean-forward="false" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        <state relative-caret-position="319">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -887,9 +794,118 @@
     <entry file="file://$PROJECT_DIR$/repository/AppRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
             <element signature="e#29#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Produit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="201" column="10" lean-forward="false" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="40" column="115" lean-forward="false" selection-start-line="40" selection-start-column="115" selection-end-line="40" selection-end-column="115" />
+          <folding>
+            <marker date="1517801290930" expanded="true" signature="4479:4486" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="118" column="22" lean-forward="false" selection-start-line="118" selection-start-column="22" selection-end-line="118" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/ProduitRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="163" column="19" lean-forward="false" selection-start-line="163" selection-start-column="19" selection-end-line="163" selection-end-column="19" />
+          <folding>
+            <element signature="e#30#51#0#PHP" expanded="true" />
+            <marker date="1517803061233" expanded="true" signature="878:892" ph="select id fr... produit" />
+            <marker date="1517803061233" expanded="true" signature="1348:1378" ph="delete from " />
+            <marker date="1517803061233" expanded="true" signature="1640:1718" ph="insert into produit... " />
+            <marker date="1517803061233" expanded="true" signature="2239:2364" ph="update produ... " />
+            <marker date="1517803061233" expanded="true" signature="2873:2986" ph="select nom, produit" />
+            <marker date="1517803061233" expanded="true" signature="3520:3522" ph="select id fr... produit" />
+            <marker date="1517803061233" expanded="true" signature="3638:3646" ph="select * fro... produit" />
+            <marker date="1517803061233" expanded="true" signature="3638:3647" ph="select * fro... produit" />
+            <marker date="1517803061233" expanded="true" signature="3949:3972" ph="select id fr... produit" />
+            <marker date="1517803061233" expanded="true" signature="5028:5059" ph="select count... produit" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/glyphicon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/ProduitServiceI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="138" column="31" lean-forward="false" selection-start-line="138" selection-start-column="31" selection-end-line="138" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ProduitController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="90" column="32" lean-forward="false" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="92" lean-forward="false" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="e#6#51#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#13956#14153#0#PHP" expanded="false" />
+            <marker date="1517805704162" expanded="true" signature="5135:5182" ph="..." />
+            <marker date="1517805704162" expanded="true" signature="5538:5590" ph="..." />
+            <marker date="1517805704162" expanded="true" signature="5559:5590" ph="..." />
           </folding>
         </state>
       </provider>

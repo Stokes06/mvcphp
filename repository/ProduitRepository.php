@@ -157,20 +157,29 @@ class ProduitRepository extends AppRepository
 
     /**
      * @param int $page
+     * @param bool $photo
      * @param null $type
      * @param null $nom
      * @param null $sort
      * @return Page
      */
-    public function applyFiltersAndSorting($page=1, $type=null, $nom=null, $sort=null){
+    public function applyFiltersAndSorting($page=1, $photo=false, $type=null, $nom=null, $sort=null){
         if($nom) $nom .= "%";
+        $WHERE = " where ";
+        $AND = " and ";
         $query = "";
-        if($type){
-            $query .= "where idType = :type ";
-            if($nom)
-                $query .= "and nom LIKE :nom ";
-        }else if($nom){
-            $query .= "where nom LIKE :nom ";
+        $firstc = false;
+        $prefix = $WHERE;
+        if($type) {
+            $query .= $prefix."idType = :type ";
+            $prefix = $AND;
+        }
+        if($nom){
+            $query .= $prefix."nom LIKE :nom ";
+            $prefix = $AND;
+        }
+        if($photo){
+            $query .= $prefix."image is not null and image !='' ";
         }
 
         $params = compact("type","nom");

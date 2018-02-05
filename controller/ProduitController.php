@@ -70,6 +70,7 @@ class ProduitController extends AbstractController
         $page = $_GET['page'] ?? 1;
         $nom = $_GET['nom'] ?? null;
         $sort = $_GET['sort'] ?? null;
+        $photo = isset($_GET['photo']);
         $type = isset($_GET['type']) && $_GET['type']!=0 ? $_GET['type'] : null;
 
         $last = $_GET['last'] ?? null;
@@ -78,7 +79,7 @@ class ProduitController extends AbstractController
         $numberOfProducts = null;
         $pageMax = null;
 
-        $pageable = $this->produitService->applyFiltersAndSorting($page, $type, $nom, $sort);
+        $pageable = $this->produitService->applyFiltersAndSorting($page, $photo, $type, $nom, $sort);
         $produits = $pageable->getContent();
         $numberOfProducts = $pageable->getNumberTotalOfRows();
 
@@ -87,7 +88,7 @@ class ProduitController extends AbstractController
 
         $this->render("index", compact("produits", "types", "TITLE_PAGE",
             "type", "last", "pageMax", "page", "numberOfProducts",
-            "nom", "sort"));
+            "nom", "sort","photo"));
     }
 
     public function create($produit = null, $errors = [])

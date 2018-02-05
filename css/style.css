@@ -1,6 +1,10 @@
 :root {
     --link-padding: 35px;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     border-radius: 0;
     padding: 0 100px;
@@ -41,7 +45,7 @@ h1{
 
 #filtres{
     padding: 20px;
-    border : 2px dotted black;
+    background-color: #a0c8ff;
 }
 
 #btn-filtres{
@@ -100,4 +104,17 @@ h1{
 .navbar li{
     min-width: 100px;
     text-align: center;
+}
+.form-control + .glyphicon {
+    position: absolute;
+    left: 0;
+    padding: 8px 27px;
+}
+.disabled a{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.btn-group a{
+    margin-left: 10px;
 }
